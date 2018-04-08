@@ -10,8 +10,8 @@ RESULTNAME="deklaracja_pcc_3"
 
 PESEL="00000000000"
 US="Pcim dolny 7"
-IMIE="Mateusz"
-NAZWISKO="Morawiecki"
+IMIE="Mat"
+NAZWISKO="Moraw"
 RODZICE="Mosze, Wanda"
 PODATNIK="$IMIE, $NAZWISKO, 1944-03-14"
 
