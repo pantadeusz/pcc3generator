@@ -1,0 +1,85 @@
+\documentclass{article}
+\usepackage{background}
+\usepackage{tikz}
+\usepackage[ddmmyyyy]{datetime}
+\renewcommand{\dateseparator}{.}
+\backgroundsetup{
+scale=1,
+angle=0,
+opacity=1,  %% adjust
+contents={\includegraphics[width=\paperwidth,height=\paperheight,page=\thepage]{pcc3}}
+}
+
+\newcommand\PlaceText[3]{%
+\begin{tikzpicture}[remember picture,overlay]
+\node[outer sep=0pt,inner sep=0pt,anchor=south west] 
+  at ([xshift=#1,yshift=-#2]current page.north west) {#3};
+\end{tikzpicture}%
+}
+
+\begin{document}
+\thispagestyle{empty}
+
+\PlaceText{0.12*\paperwidth}{0.07*\paperheight}{\resizebox{170pt}{10pt}{\huge\texttt{##1##}}}
+
+\PlaceText{0.38*\paperwidth}{0.155*\paperheight}{\resizebox{125pt}{10pt}{\huge\texttt{##4##}}}
+
+
+
+\PlaceText{0.09*\paperwidth}{0.290*\paperheight}{\large\texttt{##5##}}
+\PlaceText{0.327*\paperwidth}{0.317*\paperheight}{\resizebox{8pt}{8pt}{\huge\texttt{X}}}
+
+##7#1##\PlaceText{0.164*\paperwidth}{0.436*\paperheight}{\resizebox{8pt}{8pt}{\huge\texttt{X}}} % zobowiazany solidarnie - crypto-crypto
+##7#2##\PlaceText{0.530*\paperwidth}{0.436*\paperheight}{\resizebox{8pt}{8pt}{\huge\texttt{X}}} % strona umowy zamiany - kupno btc
+
+
+
+\PlaceText{0.530*\paperwidth}{0.489*\paperheight}{\resizebox{8pt}{8pt}{\huge\texttt{X}}}
+\PlaceText{0.11*\paperwidth}{0.530*\paperheight}{\Large\texttt{##9##}}
+\PlaceText{0.11*\paperwidth}{0.575*\paperheight}{\Large\texttt{##10##}}
+
+
+
+\PlaceText{0.10*\paperwidth}{0.630*\paperheight}{\large\texttt{##11##}}
+\PlaceText{0.30*\paperwidth}{0.630*\paperheight}{\large\texttt{##12##}}
+\PlaceText{0.70*\paperwidth}{0.630*\paperheight}{\large\texttt{##13##}}
+\PlaceText{0.10*\paperwidth}{0.659*\paperheight}{\large\texttt{##14##}}
+\PlaceText{0.32*\paperwidth}{0.659*\paperheight}{\large\texttt{##15##}}
+\PlaceText{0.78*\paperwidth}{0.659*\paperheight}{\large\texttt{##16##}}
+\PlaceText{0.88*\paperwidth}{0.659*\paperheight}{\large\texttt{##17##}}
+\PlaceText{0.10*\paperwidth}{0.690*\paperheight}{\large\texttt{##18##}}
+\PlaceText{0.47*\paperwidth}{0.690*\paperheight}{\large\texttt{##19##}}
+\PlaceText{0.66*\paperwidth}{0.690*\paperheight}{\large\texttt{##20##}}
+
+
+\PlaceText{0.749*\paperwidth}{0.7476*\paperheight}{\resizebox{8pt}{8pt}{\huge\texttt{X}}}
+\PlaceText{0.338*\paperwidth}{0.775*\paperheight}{\resizebox{8pt}{8pt}{\huge\texttt{X}}}
+\PlaceText{0.338*\paperwidth}{0.8050*\paperheight}{\resizebox{8pt}{8pt}{\huge\texttt{X}}}
+
+% \PlaceText{0.10*\paperwidth}{0.8420*\paperheight}{\Large\texttt{Zakup kryptowaluty}}
+\PlaceText{0.10*\paperwidth}{0.8420*\paperheight}{\Large\texttt{##24##}}
+
+\clearpage
+\thispagestyle{empty}
+
+\PlaceText{0.40*\paperwidth}{0.15*\paperheight}{\large\texttt{##25##}}
+\PlaceText{0.80*\paperwidth}{0.15*\paperheight}{\large\texttt{##26##}}
+
+\PlaceText{0.40*\paperwidth}{0.21*\paperheight}{\large\texttt{##29##}}
+\PlaceText{0.65*\paperwidth}{0.21*\paperheight}{\large\texttt{##30##}}
+\PlaceText{0.80*\paperwidth}{0.21*\paperheight}{\large\texttt{##31##}}
+
+\PlaceText{0.80*\paperwidth}{0.47*\paperheight}{\large\texttt{##47##}}
+\PlaceText{0.80*\paperwidth}{0.85*\paperheight}{\large\texttt{##47##}}
+
+
+\clearpage
+\thispagestyle{empty}
+
+\PlaceText{0.53*\paperwidth}{0.265*\paperheight}{\large\texttt{0}}
+
+\PlaceText{0.1*\paperwidth}{0.355*\paperheight}{\large\texttt{##65##}}
+\PlaceText{0.5*\paperwidth}{0.355*\paperheight}{\large\texttt{##66##}}
+\PlaceText{0.24*\paperwidth}{0.380*\paperheight}{\resizebox{129pt}{8pt}{\large\texttt{\today}}}
+
+\end{document}
